@@ -155,7 +155,14 @@ https://www.markdownguide.org/tools/
       },
       computed: {
         compiledMarkdown() {
-          return marked(this.input, { sanitize: true })
+          mkInterpreter = marked(this.input, {sanitize: true})
+          blockHide = mkInterpreter.replace(/\[\-\-buildHide\-\-\][\s\S]+?\[\-\-buildEnd\-\-\]/gi, '')
+          blockHTML = blockHide.replace(/\[\-\-build\-\-\][\s\S]+?\[\-\-buildEnd\-\-\]/gi, function(x) {
+                        parseHTML = document.createElement('div')
+                        parseHTML.innerHTML = x.replace(/\[\-\-build(end)?\-\-\]/gi, '')
+                        return parseHTML.innerText
+                      })
+          return blockHTML
         }
       },
       methods: {
