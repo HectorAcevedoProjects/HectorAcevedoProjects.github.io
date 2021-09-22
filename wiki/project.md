@@ -1,6 +1,6 @@
 # Deepdrive
 
-![Deepdrive](/../service/images/logo1.svg "Deepdrive")
+![Deepdrive](../logo1.svg "Deepdrive")
 
 Proyecto de Transformación Digital
 
