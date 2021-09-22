@@ -11,16 +11,18 @@ Inspirado y motivado por el potencial de la Analítica de Datos, Automatización
 [LinkedIn Profile](https://www.linkedin.com/in/hector-acevedo-data-pmp-itil/)
 
 
-```## Deepdrive: Data Network Analysis 
+```
+## Deepdrive: Data Network Analysis 
 ### (Telefonica Movistar)
 
-▪	Diseño y construcción de Cloud Data Service para el Análisis de Datos en Redes ISP y Servicios Clientes B2B de forma automática, acelerada y masiva.
-▪	Data-Driven Decisions a partir de Insights con procesos de Data Collection (Bots) > Data Analysis and Processing > Visualizations > Conocimiento > Decisiones Eficientes > Confianza Clientes.
-▪	Creación de Conocimiento en base al Análisis Masivo de Datos (Mejoras, Performance, Fallas, Security, Recomendaciones).
-▪	Proyecto de Transformación Digital alineado con Estrategias de Digitalización y Simplificación de Telefonica Movistar.
+- Diseño y construcción de Cloud Data Service para el Análisis de Datos en Redes ISP y Servicios Clientes B2B de forma automática, acelerada y masiva.
+- Data-Driven Decisions a partir de Insights con procesos de Data Collection (Bots) > Data Analysis and Processing > Visualizations > Conocimiento > Decisiones Eficientes > Confianza Clientes.
+- Creación de Conocimiento en base al Análisis Masivo de Datos (Mejoras, Performance, Fallas, Security, Recomendaciones).
+- Proyecto de Transformación Digital alineado con Estrategias de Digitalización y Simplificación de Telefonica Movistar.
 ```
 
-```## UPP: Data Content Analysis
+```
+## UPP: Data Content Analysis
 ### (Telefonica Movistar)
 
 ▪	Análisis de Contenidos Desestructurados sobre Remedy OnDemand para encontrar Insights de los eventos más relevantes en el Timeline de las Incidencias y Problemas.
