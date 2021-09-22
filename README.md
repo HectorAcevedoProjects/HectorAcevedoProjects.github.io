@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+## Pitch de Talento
 
-You can use the [editor on GitHub](https://github.com/HectorAcevedoProjects/HectorAcevedoProjects.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Mi Marca Personal está construida sobre una amplia experiencia y trayectoria en Gestión de Proyectos y Servicios IT, Data Driven Decisions basados en Insights, BI, Data Analytics, Automatización y Apps Delivery.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Comprometido con el crecimiento del negocio en grandes ISPs, Operadores Móviles y Clientes Corporativos a través de Proyectos Desafiantes, Innovación y Creación de Valor Efectiva.
 
-### Markdown
+Incentivar la Transformación Digital y fomentar la Cultura Emprendedora en los equipos de trabajo.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Inspirado y motivado por el potencial de la Analítica de Datos, Automatización, ML y AI aplicados a proyectos disruptivos. Habilidades de Negociación, Planeación y Evaluación de Riesgos. Empatía y buena comunicación. Liderazgo de equipos de trabajo heterogéneos, autonomía y solvencia en la toma de decisiones.
 
-```markdown
-Syntax highlighted code block
+[LinkedIn Profile](https://www.linkedin.com/in/hector-acevedo-data-pmp-itil/)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+```## Deepdrive: Data Network Analysis 
+### (Telefonica Movistar)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+▪	Diseño y construcción de Cloud Data Service para el Análisis de Datos en Redes ISP y Servicios Clientes B2B de forma automática, acelerada y masiva.
+▪	Data-Driven Decisions a partir de Insights con procesos de Data Collection (Bots) > Data Analysis and Processing > Visualizations > Conocimiento > Decisiones Eficientes > Confianza Clientes.
+▪	Creación de Conocimiento en base al Análisis Masivo de Datos (Mejoras, Performance, Fallas, Security, Recomendaciones).
+▪	Proyecto de Transformación Digital alineado con Estrategias de Digitalización y Simplificación de Telefonica Movistar.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```## UPP: Data Content Analysis
+### (Telefonica Movistar)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HectorAcevedoProjects/HectorAcevedoProjects.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+▪	Análisis de Contenidos Desestructurados sobre Remedy OnDemand para encontrar Insights de los eventos más relevantes en el Timeline de las Incidencias y Problemas.
+▪	Informes Cognitivos y Semánticos con alta eficiencia personalizados para Telefonica Movistar. Visualización de Insights en múltiples áreas de conocimiento de interés.
+▪	Extensión de Google Chrome con capacidad de Análisis de Contenidos sobre cualquier sitio web a partir de Patrones y Expresiones dinámicas.
+▪	Agilidad en la interpretación de extensa información por los usuarios de la compañía aumentando el entendimiento global de los contenidos.
+```
