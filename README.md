@@ -10,8 +10,8 @@
 > 
 > Para más informacion invito a consultar mi [LinkedIn Profile](https://www.linkedin.com/in/hector-acevedo-data-pmp-itil/)
 
-## Proyectos
-Los siguientes proyectos fueron implementados al interior de `Telefonica Movistar`.
+## Proyectos de Análisis de Datos
+Los siguientes proyectos se construyeron de forma independiente para facilitar el trabajo de los equipos de `Telefonica Movistar`.
 
 ### Deepdrive (Data Network Analysis)
 - Diseño y construcción de Cloud Data Service para el Análisis de Datos en Redes ISP y Servicios Clientes B2B de forma automática, acelerada y masiva.
