@@ -130,7 +130,7 @@ https://www.markdownguide.org/tools/
 
   window.document.title = "Wiki - Deepdrive"
 
-alert(44)
+
   // el contenido se edita en los archivos .md
 
   wiki = {_project: 'Elevator Pitch',
@@ -138,7 +138,9 @@ alert(44)
           _install: 'User Guide'}
 
   Object.keys(wiki).forEach((content, i) => {
+   console.log(">>>>>")
     $.get(content + '.md', function (data) {
+     console.log(i + " > " + data)
       jQuery.data(document.body, content, data)
     }, 'html')
     .done(function(){if (i == 0) appLoad()})
