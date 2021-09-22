@@ -134,13 +134,11 @@ https://www.markdownguide.org/tools/
   // el contenido se edita en los archivos .md
 
   wiki = {project: 'Elevator Pitch',
-          _cloud: 'Orchestrator',
-          _install: 'User Guide'}
+          cloud: 'Orchestrator',
+          install: 'User Guide'}
 
   Object.keys(wiki).forEach((content, i) => {
-   console.log(">>>>>")
     $.get(content + '.md', function (data) {
-     console.log(i + " > " + data)
       jQuery.data(document.body, content, data)
     }, 'html')
     .done(function(){if (i == 0) appLoad()})
