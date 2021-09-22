@@ -1,0 +1,178 @@
+<!--
+https://www.markdownguide.org/basic-syntax
+https://www.markdownguide.org/cheat-sheet
+https://www.markdownguide.org/tools/
+ -->
+
+
+<head>
+  <meta charset="UTF-8">
+  <link id="favicon" rel="shortcut icon" type="image/png" href="/../service/favicon.ico" />
+</head>
+
+
+<body>
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script src="../vue@next.js" charset="utf-8"></script>
+<script src="../lodash.js" charset="utf-8"></script>
+<script src="marked@0.3.7.js" charset="utf-8"></script>
+
+
+<style>
+  html, body, #editor {
+    margin: 0;
+    height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+  }
+
+  div#left {
+    border-right: 1px solid #d4d5d6;
+  }
+  div#left span#menu {
+    display: block;
+    padding: 20px 40px;
+    background: #e0ebf7;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  div#right {
+    padding-bottom: 60px !important;
+  }
+
+  #editor {
+    display: grid;
+    grid-template-columns: 28% 72%;
+  }
+  #editor > div {
+    max-height: 100% !important;
+    overflow: auto !important;
+  }
+  #editor > div * {
+    font-family: system-ui;
+  }
+  #editor > div, textarea {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 35px;
+    /* width: 49%; */
+  }
+  textarea {
+    display: none !important;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-right: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    font-family: "Monaco", courier, monospace;
+    padding: 20px;
+  }
+
+  img[alt=Deepdrive] {
+    width: 80px;
+  }
+  pre code {
+    display: inline-block;
+    padding: 17px;
+    width: -webkit-fill-available;
+  }
+  code {
+    position: relative;
+    top: -1px;
+    padding: 1px 3px;
+    color: #464a4e;
+    background: #eaeff4;
+    border-radius: 4px;
+  }
+  blockquote {
+    margin-left: 0px;
+    padding-left: 20px;
+    border-left: 8px solid #d3d9dc;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: .66em 1em;
+    border: 1px solid #d4dae6;
+  }
+
+  img[title="Tier Level"] {
+    padding-left: 50px;
+    width: 200px;
+  }
+</style>
+
+
+
+<div id="editor">
+  <div id="left">
+    <button style="display:none" @click="button">button</button>
+    <transition-group name="list" tag="div">
+      <p v-for="(item, index) in items" :key="item">
+        <span id="menu" v-on:click="change(index)">{{ item }}</span>
+      </p>
+    </transition-group>
+    <textarea :value="input" @input="update"></textarea>
+  </div>
+  <div id="right" v-html="compiledMarkdown"></div>
+</div>
+
+
+<script type="text/javascript">
+
+  window.document.title = "Wiki - Deepdrive"
+
+
+  // el contenido se edita en los archivos .md
+
+  wiki = {_project: 'Elevator Pitch',
+          _cloud: 'Orchestrator',
+          _install: 'User Guide'}
+
+  Object.keys(wiki).forEach((content, i) => {
+    $.get(content + '.md', function (data) {
+      jQuery.data(document.body, content, data)
+    }, 'html')
+    .done(function(){if (i == 0) appLoad()})
+  })
+
+
+  function appLoad() {
+    const app = Vue.createApp({
+      data() {
+        return {
+          input: jQuery.data(document.body, Object.keys(wiki)[0]),
+          items: Object.values(wiki)
+        }
+      },
+      computed: {
+        compiledMarkdown() {
+          return marked(this.input, { sanitize: true })
+        }
+      },
+      methods: {
+        update: _.debounce(function(e) {
+          this.input = e.target.value
+        }, 300),
+        change: function(i) {
+          this.input = jQuery.data(document.body, Object.keys(wiki)[i])
+        },
+        button() {
+          // this.input = jQuery.data(document.body, 'cloud')
+        }
+      }
+    })
+    app.mount('#editor')
+  }
+
+</script>
+
+</body>
