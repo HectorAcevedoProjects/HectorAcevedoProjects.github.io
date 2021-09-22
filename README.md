@@ -8,7 +8,7 @@
 > 
 > Inspirado y motivado por el potencial de la Analítica de Datos, Automatización, ML y AI aplicados a proyectos disruptivos. Habilidades de Negociación, Planeación y Evaluación de Riesgos. Empatía y buena comunicación. Liderazgo de equipos de trabajo heterogéneos, autonomía y solvencia en la toma de decisiones.
 > 
-> Para más informacion invito a consultar mi [LinkedIn Profile](https://www.linkedin.com/in/hector-acevedo-data-pmp-itil/)
+> Para más informacion invito a consultar mi [LinkedIn Profile](https://www.linkedin.com/in/hector-acevedo-data-pmp-itil/).
 
 ## Proyectos de Análisis de Datos
 Los siguientes proyectos se construyeron de forma independiente para facilitar el trabajo de los equipos de `Telefonica Movistar`.
